@@ -4,7 +4,6 @@ import { Response } from '@angular/http';
 
 import { type } from '../utils';
 
-
 /**
  * For each action type in an action group, make a simple
  * enum object for all of this group's action types.
@@ -26,8 +25,8 @@ export const ActionTypes = {
  */
 export class AddItemAction implements Action {
     public type: string = ActionTypes.ADD_ITEM;
-    constructor(public payload: any) { }
+    constructor(public payload: any) { };
 }
 
 export type Actions
-    = AddItemAction
+    = AddItemAction;

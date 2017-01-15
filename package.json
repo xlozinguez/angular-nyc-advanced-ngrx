@@ -27,19 +27,22 @@
     "@angular/platform-browser": "2.4.3",
     "@angular/platform-browser-dynamic": "2.4.3",
     "@angular/router": "3.4.3",
-    "core-js": "2.4.1",
-    "rxjs": "5.0.2",
-    "zone.js": "0.7.4",
     "@ngrx/core": "^1.2.0",
     "@ngrx/db": "^2.0.1",
     "@ngrx/effects": "^2.0.0",
     "@ngrx/store": "^2.2.1",
     "@ngrx/store-devtools": "^3.2.2",
     "@ngrx/store-log-monitor": "^3.0.2",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "core-js": "2.4.1",
+    "reselect": "^2.5.4",
+    "rxjs": "5.0.2",
+    "zone.js": "0.7.4"
   },
   "devDependencies": {
     "@angular/compiler-cli": "2.4.3",
+    "@ngrx/store-devtools": "^3.2.2",
+    "ngrx-store-freeze": "^0.1.6",
     "ngx-webpack": "^3.2.2",
     "tslint": "^4.3.1"
   }

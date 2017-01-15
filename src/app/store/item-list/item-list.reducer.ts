@@ -1,16 +1,15 @@
 /* tslint:disable: no-switch-case-fall-through */
 import { Action } from '@ngrx/store';
-import { compose } from '@ngrx/core/compose';
 import { Observable } from 'rxjs/Observable';
 
-import * as itemListActions from './item-List.actions';
+import * as itemListActions from './item-list.actions';
 
 export interface ItemListState {
     items: Array<any>;
 };
 
 export const initialState: ItemListState = {
-    items: []
+    items: ['1', '13', '8', '3', '6', '5', '12', '10', '2', '4', '7']
 };
 
 export function itemListReducer(state = initialState, action: itemListActions.Actions): ItemListState {

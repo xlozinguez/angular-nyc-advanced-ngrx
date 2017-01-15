@@ -11,9 +11,11 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "outDir": "./build",
-        "rootDir": "./src",
+        "rootDir": "./src/app",
         "skipLibCheck": true,
-        "typeRoots": ["./node_modules/@types"],
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
         "types": [
             "node",
             "jasmine"
@@ -25,13 +27,6 @@
     },
     "compileOnSave": false,
     "buildOnSave": false,
-    "exclude": [
-        "node_modules",
-        "dist",
-        "**/*.ngfactory.ts",
-        "**/*.ngstyle.ts",
-        "**/*.spec.ts"
-    ],
     "awesomeTypescriptLoaderOptions": {
         "forkChecker": true,
         "useWebpackText": true
@@ -39,5 +34,39 @@
     "angularCompilerOptions": {
         "genDir": ".",
         "entryModule": "src/app/modules/main.module#MainModule"
-    }
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "!**/*.spec.ts",
+        "!node_modules/**"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    },
+    "files": [
+        "src/app/components/app.component.ts",
+        "src/app/components/step-list/step-item-list/step-item-list.component.ts",
+        "src/app/components/step-list/step-list.component.ts",
+        "src/app/components/step-list/step-list.module.ts",
+        "src/app/components/step-list/step/step.component.ts",
+        "src/app/custom-typings.d.ts",
+        "src/app/main.ts",
+        "src/app/modules/main.module.ts",
+        "src/app/polyfill.ts",
+        "src/app/services/sort-service.ts",
+        "src/app/store/app.selectors.ts",
+        "src/app/store/app.store.ts",
+        "src/app/store/index.ts",
+        "src/app/store/item-list/item-list.actions.ts",
+        "src/app/store/item-list/item-list.reducer.ts",
+        "src/app/store/item-list/item-list.selectors.ts",
+        "src/app/store/step-list/step-list.actions.ts",
+        "src/app/store/step-list/step-list.reducer.ts",
+        "src/app/store/step-list/step-list.selectors.ts",
+        "src/app/store/utils/index.ts",
+        "src/app/store/utils/type.ts",
+        "src/app/style.ts",
+        "src/app/test.ts",
+        "src/app/vendor.ts"
+    ]
 }
