@@ -1,0 +1,7 @@
+.idea
+node_modules
+dist
+build
+*.ngfactory.ts
+*.ngstyle.ts
+*.ngsummary.json

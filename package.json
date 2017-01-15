@@ -1,0 +1,46 @@
+{
+  "name": "advanced-ngrx",
+  "version": "1.0.0",
+  "description": "Demo app about advanced @ngrx concepts",
+  "main": "index.js",
+  "scripts": {
+    "start": "ng-start",
+    "build": "ng-build",
+    "test": "ng-test",
+    "test-watch": "ng-test --watch",
+    "lint": "ng-lint",
+    "deploy": "ng-deploy"
+  },
+  "keywords": [
+    "angular2",
+    "webpack",
+    "ngrx"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "2.4.3",
+    "@angular/compiler": "2.4.3",
+    "@angular/core": "2.4.3",
+    "@angular/forms": "2.4.3",
+    "@angular/http": "2.4.3",
+    "@angular/platform-browser": "2.4.3",
+    "@angular/platform-browser-dynamic": "2.4.3",
+    "@angular/router": "3.4.3",
+    "core-js": "2.4.1",
+    "rxjs": "5.0.2",
+    "zone.js": "0.7.4",
+    "@ngrx/core": "^1.2.0",
+    "@ngrx/db": "^2.0.1",
+    "@ngrx/effects": "^2.0.0",
+    "@ngrx/store": "^2.2.1",
+    "@ngrx/store-devtools": "^3.2.2",
+    "@ngrx/store-log-monitor": "^3.0.2",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "2.4.3",
+    "ngx-webpack": "^3.2.2",
+    "tslint": "^4.3.1"
+  }
+}
