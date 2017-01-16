@@ -5,19 +5,17 @@ import { Observable } from 'rxjs/Observable';
 import { AppState } from '../../store/app.store';
 
 import * as appSelectors from '../../store/app.selectors';
-import * as itemListActions from '../../store/item-list/item-list.actions';
 
 @Component({
     selector: 'step-list',
-    changeDetection: ChangeDetectionStrategy.OnPush,
     template: `
-        <step *ngFor="let step of steps" [step]="step"></step>
+        <step *ngFor="let step of steps; let i = index;" [step]="step" [stepIndex]="i"></step>
     `,
     styleUrls: ['step-list.style.css']
 })
 export class StepListComponent {
-    steps$: Observable<Array<any[]>>;
-    steps: Array<any[]>;
+    steps$: Observable<Array<Array<Number>>>;
+    steps: Array<Array<Number>>;
 
     constructor(
         private store: Store<AppState>

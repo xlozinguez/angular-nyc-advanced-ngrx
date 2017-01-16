@@ -44,7 +44,10 @@
         "rewriteTsconfig": true
     },
     "files": [
+        "src/app/components/add-item/add-item.component.ts",
         "src/app/components/app.component.ts",
+        "src/app/components/item-list/item-list.component.ts",
+        "src/app/components/sort-pick/sort-pick.component.ts",
         "src/app/components/step-list/step-item-list/step-item-list.component.ts",
         "src/app/components/step-list/step-list.component.ts",
         "src/app/components/step-list/step-list.module.ts",
@@ -53,7 +56,10 @@
         "src/app/main.ts",
         "src/app/modules/main.module.ts",
         "src/app/polyfill.ts",
-        "src/app/services/sort-service.ts",
+        "src/app/rxjs.imports.ts",
+        "src/app/services/sorting-service.ts",
+        "src/app/store/app.actions.ts",
+        "src/app/store/app.effects.ts",
         "src/app/store/app.selectors.ts",
         "src/app/store/app.store.ts",
         "src/app/store/index.ts",

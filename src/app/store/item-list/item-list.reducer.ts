@@ -5,15 +5,19 @@ import { Observable } from 'rxjs/Observable';
 import * as itemListActions from './item-list.actions';
 
 export interface ItemListState {
-    items: Array<any>;
+    items: Array<Number>;
 };
 
 export const initialState: ItemListState = {
-    items: ['1', '13', '8', '3', '6', '5', '12', '10', '2', '4', '7']
+    items: []
 };
 
 export function itemListReducer(state = initialState, action: itemListActions.Actions): ItemListState {
     switch (action.type) {
+
+        case itemListActions.ActionTypes.RESET_ITEM_LIST: {
+            return Object.assign({}, state, initialState);
+        }
 
         case itemListActions.ActionTypes.ADD_ITEM: {
             const item = action.payload;
