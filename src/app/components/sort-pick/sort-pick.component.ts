@@ -18,10 +18,10 @@ import { SortType } from '../../models/sort-type.model';
                 <select class="form-control" (change)="onSelectedSortType($event.target.value)">
                     <option value="bubble">Bubble Sort</option>
                     <option value="selection">Selection Sort</option>
-                    <option value="insertion">Insertion Sort</option>
-                    <option value="merge">Merge Sort</option>
-                    <option value="quick">Quick Sort</option>
-                    <option value="heap">Heap Sort</option>
+                    <option value="insertion" disabled>Insertion Sort (wip)</option>
+                    <option value="merge" disabled>Merge Sort (wip)</option>
+                    <option value="quick" disabled>Quick Sort (wip)</option>
+                    <option value="heap" disabled>Heap Sort (wip)</option>
                 </select>
             </div>
             <button class="btn btn-primary" (click)="sort()">Sort!</button>

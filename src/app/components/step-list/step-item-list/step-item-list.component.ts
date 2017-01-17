@@ -11,6 +11,6 @@ import { Component, Input } from '@angular/core';
     styleUrls: ['./step-item-list.css']
 })
 export class StepItemListComponent {
-    @Input() items: any[];
-    @Input() stepIndex: any;
+    @Input() items: Number[];
+    @Input() stepIndex: Number;
 }

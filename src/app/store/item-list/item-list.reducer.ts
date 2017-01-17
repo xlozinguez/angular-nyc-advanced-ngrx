@@ -15,6 +15,11 @@ export const initialState: ItemListState = {
 export function itemListReducer(state = initialState, action: itemListActions.Actions): ItemListState {
     switch (action.type) {
 
+        case itemListActions.ActionTypes.DB_LOAD_ITEMS_SUCCESS: {
+            const items = action.payload;
+            return Object.assign({}, state, { items });
+        }
+
         case itemListActions.ActionTypes.RESET_ITEM_LIST: {
             return Object.assign({}, state, initialState);
         }

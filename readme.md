@@ -12,7 +12,13 @@ This project illustrates how to leverage @ngrx add-ons:
 
 ## App Overview
 
+The goal of the app is to demonstrate the different steps sorting algorithms go through to complete.
+
+You first enter the number you would like to sort, then you select the sorting algorithm and hit 'Sort!' :tada:.
+
 ![Bubble Sort Example](/docs/bubbleSort.gif)
+
+To go further into the @ngrx add ons usage, please refer to the presentation section.
 
 ## Install
 

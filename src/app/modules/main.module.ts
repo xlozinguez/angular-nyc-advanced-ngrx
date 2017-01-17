@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
+import { DBModule } from '@ngrx/db';
 
 import { rootReducer } from '../store';
 
@@ -18,6 +19,9 @@ import { ItemListComponent } from '../components/item-list/item-list.component';
 import { StepListModule } from '../components/step-list/step-list.module';
 
 import { AppEffects } from '../store/app.effects';
+import { ItemListEffects } from '../store/item-list/item-list.effects';
+
+import { schema } from '../db';
 
 @NgModule({
     declarations: [
@@ -31,8 +35,13 @@ import { AppEffects } from '../store/app.effects';
         FormsModule,
         StoreModule.provideStore(rootReducer),
         StoreDevtoolsModule.instrumentOnlyWithExtension(),
+
         StepListModule,
-        EffectsModule.run(AppEffects)
+
+        EffectsModule.run(AppEffects),
+        EffectsModule.run(ItemListEffects),
+
+        DBModule.provideDB(schema)
     ],
     providers: [SortingService],
     bootstrap: [AppComponent]
