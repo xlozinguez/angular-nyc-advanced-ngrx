@@ -4,16 +4,16 @@ import { Response } from '@angular/http';
 import { type } from '../utils';
 
 export const ActionTypes = {
-    RESET_ITEM_LIST: type('[Item List] Reset Item List'),
-    ADD_ITEM: type('[Item List] Adding New Item'),
-    ADD_ITEM_SUCCESS: type('[Item List] Adding New Item Success'),
-    ADD_ITEM_FAIL: type('[Item List] Adding New Item Fail'),
-    REMOVE_ITEM: type('[Item List] Remove Item'),
-    REMOVE_ITEM_SUCCESS: type('[Item List] Remove Item Success'),
-    REMOVE_ITEM_FAIL: type('[Item List] Remove Item Fail'),
-    DB_LOAD_ITEMS: type('[Item List] Db Load'),
-    DB_LOAD_ITEMS_SUCCESS: type('[Item List] Db Load Item Success'),
-    DB_LOAD_ITEMS_FAIL: type('[Item List] Db Load Item Fail')
+    RESET_ITEM_LIST:        type('[Item List] Reset Item List'),
+    ADD_ITEM:               type('[Item List] Adding New Item'),
+    ADD_ITEM_SUCCESS:       type('[Item List] Adding New Item Success'),
+    ADD_ITEM_FAIL:          type('[Item List] Adding New Item Fail'),
+    REMOVE_ITEM:            type('[Item List] Remove Item'),
+    REMOVE_ITEM_SUCCESS:    type('[Item List] Remove Item Success'),
+    REMOVE_ITEM_FAIL:       type('[Item List] Remove Item Fail'),
+    DB_LOAD_ITEMS:          type('[Item List] Db Load'),
+    DB_LOAD_ITEMS_SUCCESS:  type('[Item List] Db Load Item Success'),
+    DB_LOAD_ITEMS_FAIL:     type('[Item List] Db Load Item Fail')
 };
 
 export class ResetItemListAction implements Action {

@@ -70,6 +70,7 @@
         "src/app/store/item-list/item-list.effects.ts",
         "src/app/store/item-list/item-list.reducer.ts",
         "src/app/store/item-list/item-list.selectors.ts",
+        "src/app/store/meta/exceptions-handler.meta-reducer.ts",
         "src/app/store/step-list/step-list.actions.ts",
         "src/app/store/step-list/step-list.reducer.ts",
         "src/app/store/step-list/step-list.selectors.ts",

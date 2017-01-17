@@ -4,7 +4,8 @@ import { Response } from '@angular/http';
 import { type } from './utils';
 
 export const ActionTypes = {
-    RESET: type('[App] Reset')
+    RESET: type('[App] Reset'),
+    EXCEPTION: type('[App] Exception Raised')
 };
 
 export class ResetAction implements Action {
@@ -12,5 +13,11 @@ export class ResetAction implements Action {
     constructor(public payload: any) { };
 }
 
+export class ExceptionAction implements Action {
+    public type: string = ActionTypes.EXCEPTION;
+    constructor(public payload: any) { };
+}
+
 export type Actions
-    = ResetAction;
+    = ResetAction
+    | ExceptionAction;
