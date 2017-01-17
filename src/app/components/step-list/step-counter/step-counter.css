@@ -1,0 +1,15 @@
+.step-counter {
+    position: fixed;
+    font-size: 30px;
+    z-index: 500;
+    font-weight: bolder;
+    color: silver;
+    background-color: grey;
+    border-radius: 25px;
+    padding: 5px 10px;
+    top: 150px;
+    right: 10px;
+    min-width: 50px;
+    text-align: center;
+    min-height: 50px;
+}

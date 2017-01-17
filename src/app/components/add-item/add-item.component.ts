@@ -24,16 +24,9 @@ import * as itemListActions from '../../store/item-list/item-list.actions';
     `
 })
 export class AddItemComponent {
-    items$: Observable<Array<Number>>;
-    items: Array<Number>;
     newItem: any = null;
 
-    constructor(
-        private store: Store<AppState>
-    ) {
-        this.items$ = this.store.select(appSelectors.getItemList);
-        this.items$.subscribe((items) => { this.items = items; });
-    }
+    constructor( private store: Store<AppState> ) { }
 
     addItem() {
         if (this.newItem) {

@@ -19,6 +19,16 @@ export function itemListReducer(state = initialState, action: itemListActions.Ac
             return Object.assign({}, state, initialState);
         }
 
+        case itemListActions.ActionTypes.REMOVE_ITEM: {
+            const index = action.payload;
+            return Object.assign({}, state, {
+                items: [
+                    ...state.items.slice(0, index),
+                    ...state.items.slice(index + 1)
+                ]
+            });
+        }
+
         case itemListActions.ActionTypes.ADD_ITEM: {
             const item = action.payload;
             return Object.assign({}, state, {

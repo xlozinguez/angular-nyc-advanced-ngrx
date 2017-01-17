@@ -16,7 +16,11 @@ export class AppEffects {
 
     @Effect()
     resetItemList$: Observable<Action> = this.actions$
-        .ofType(itemListActions.ActionTypes.RESET_ITEM_LIST)
+        .ofType(
+            itemListActions.ActionTypes.RESET_ITEM_LIST,
+            itemListActions.ActionTypes.ADD_ITEM,
+            itemListActions.ActionTypes.REMOVE_ITEM
+        )
         .map(action => action.payload)
         .mergeMap((payload) => Observable.of(new stepListActions.ResetStepListAction(null)));
 }

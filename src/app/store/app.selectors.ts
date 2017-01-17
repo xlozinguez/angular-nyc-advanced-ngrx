@@ -19,6 +19,21 @@ export const getStepListState = (state: AppState) => state.stepList;
  */
 export const getStepList = createSelector(getStepListState, stepListSelectors.getStepList);
 
+/**
+ * [getSortType returns an observable of the sort type]
+ * @param  {StepListState|Observable} an observable of the StepList store state
+ * @param  {SortType|Observable} an observable of the sort type
+ * @return {SortType|Observable} an observable of the sort type
+ */
+export const getSortType = createSelector(getStepListState, stepListSelectors.getSortType);
+
+/**
+ * [getStepCount returns an observable of the total step counted]
+ * @param  {StepListState|Observable} an observable of the StepList store state
+ * @param  {Number|Observable} an observable of the total step counted
+ * @return {Number|Observable} an observable of the total step counted
+ */
+export const getStepCount = createSelector(getStepListState, stepListSelectors.getStepCount);
 
 /**
  * [getItemListState returns an observable of the ItemList state]
