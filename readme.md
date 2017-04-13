@@ -8,7 +8,7 @@ This project illustrates how to leverage @ngrx add-ons:
 
 ## Presentation
 - [Slides](https://docs.google.com/presentation/d/1XaxzW2qfvqergHNOaGLlFnr3gDX0LebH6NGT5mU6slU/edit?usp=sharing)
-- Video (Soon!)
+- [Video](https://www.youtube.com/watch?v=YCXkiMVB_bY)
 
 ## App Overview
 
