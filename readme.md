@@ -24,7 +24,7 @@ To go further into the @ngrx add ons usage, please refer to the presentation sec
 
 ```shell
     $ git clone git@github.com:xlozinguez/angular-nyc-advanced-ngrx.git
-    $ cd angular-nyc-advanced-ngrx.git
+    $ cd angular-nyc-advanced-ngrx
     $ npm install
 ```
 
